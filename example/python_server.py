@@ -9,11 +9,11 @@ def main():
     s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     ssl_socket = ssl.wrap_socket(
             s,
-            keyfile="server.key",
-            certfile="server.crt",
+            keyfile="../server.key",
+            certfile="../server.crt",
             server_side=True,
             cert_reqs=ssl.CERT_REQUIRED,
-            ca_certs="ca.crt",
+            ca_certs="../ca.crt",
             )
 
     ssl_socket.bind(("127.0.0.1", 9900))

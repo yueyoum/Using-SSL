@@ -8,9 +8,9 @@
 
 
 -define(DEFAULT_PORT, 9900).
--define(SOCKET_OPTS, [{certfile, "server.crt"},
-                      {keyfile, "server.key"},
-                      {cacertfile, "ca.crt"},
+-define(SOCKET_OPTS, [{certfile, "../server.crt"},
+                      {keyfile, "../server.key"},
+                      {cacertfile, "../ca.crt"},
                       {verify, verify_peer},
                       {fail_if_no_peer_cert, true}]).
 

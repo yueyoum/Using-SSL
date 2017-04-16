@@ -5,8 +5,8 @@ def main():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     ssl_socket = ssl.wrap_socket(
             s,
-            keyfile="server.key",
-            certfile="server.crt",
+            keyfile="../client.key",
+            certfile="../client.crt",
             server_side=False,
             cert_reqs=ssl.CERT_NONE,
             )

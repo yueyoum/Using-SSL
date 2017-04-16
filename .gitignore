@@ -3,3 +3,10 @@
 *.bak
 *.log
 *.swp
+
+ca.crt
+server.crt
+server.key
+client.crt
+client.key
+client.p12

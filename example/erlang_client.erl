@@ -4,8 +4,8 @@
 
 -vsn("1.0.0").
 
--define(SOCKET_OPTS, [{certfile, "server.crt"},
-                      {keyfile, "server.key"}]).
+-define(SOCKET_OPTS, [{certfile, "../client.crt"},
+                      {keyfile, "../client.key"}]).
 
 start() ->
     ssl:start().

@@ -30,9 +30,3 @@ requests.get("https://127.0.0.1:4430", verify=False, cert="client.pem")
 
 浏览器 在设置中载入生成p12证书。
 
-如何生成 p12 证书:
-
-```bash
-openssl pkcs12 -export -in server.crt -inkey server.key -out client.p12 -name "xxx"
-```
-
